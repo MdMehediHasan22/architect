@@ -7,7 +7,7 @@ body {
 
 /* ----first section---- */
 .first-section {
-    width: 1920px;
+    width: 100%;
     background: rgba(255, 144, 14, 0.1);
 }
 
@@ -151,7 +151,7 @@ body {
 
 .girl-photo {
     width: 800px;
-    height: 1059px;
+    
 
 }
 
@@ -228,9 +228,7 @@ body {
 
 .fifth-section {
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     margin-bottom: 80px;
 }
 
@@ -241,7 +239,7 @@ body {
 }
 
 .sponsors-about {
-    margin-bottom: 30px;
+    
     font-weight: 400;
     font-size: 16px;
     color: #727272;
@@ -268,10 +266,11 @@ body {
     gap: 100px;
     background-color: #FFF8F3;
     padding: 130px 200px;
-}
-.contact .section-title{
     text-align: left;
 }
+/* .contact .section-title{
+    text-align: left;
+} */
 .contact input[type="text"],input[type="email"], textarea{
     margin-bottom: 24px;
     border: 0;
@@ -298,9 +297,7 @@ input{
 }
 
 .copyright {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     border: 1px solid;
     
     text-align: center;
@@ -316,7 +313,164 @@ input{
 }
  @media screen and (max-width:576px) {
     
-    
+    *{
+       margin: 0;
+       overflow-x: hidden;
       
+    }
+    .header{
+        
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .header-info{
+        margin: 0;
+    }
+    .title{
+        margin: 0;
+    }
+    h3{
+        font-size: 20px;
+    }
+    #brand-new-title {
+        margin-top: 15px;
+        font-weight: 700;
+        font-size: 18px;
+        
+    }
+    .about {
+        font-weight: 400;
+        font-size: 13px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .brand-new-button {
+        font-weight: 600;
+        font-size: 12px;
+        width: 120px;
+        height: 30px;
+        background: #FF900E;
+        border-radius: 8px;
+        border: none;
+        color: #FFFFFF;
     
+    }
+    .img{
+        width: 100%;
+    }
+    .second-section {
+        flex-direction: column-reverse;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .quick-list{
+        width: 100%;
+        padding: 5px;
+        text-align: center;
+    }
+    .quicklist-title {
+        font-weight: 500;
+        font-size: 15px;
+        align-items: center;
+    }
+    .images {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        /* margin-top: 45px; */
+    }
+    .third-section {
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+    }
+    .love-title {
+        
+        font-size: 20px;
+        
+    }
+    .feature-part {
+        width: 100%;
+        text-align: center;
+    
+    }
+    .feature-type {
+        padding: 5px 0px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        width: 100%;
+        
+    }
+    .girl-photo {
+        width: 100%;
+        
+    
+    }
+    .year-button {
+        
+        width: 200px;
+        height: auto;
+        
+    }
+    .fourth-section{
+        margin: 0;
+    }
+    .facts-part {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .box-facts {
+        
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        margin:0px;
+    
+    }
+    .box{
+        padding: 5px 0;
+        width: 100%;
+        height: auto;
+    }
+    .sponsors-about {
+    
+        font-weight: 400;
+        font-size: 16px;
+        width: 100%;
  }
+ .all-sponsors {
+    flex-direction: column;
+    gap: 50px;
+}
+.contact{
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+.btn-primary{
+    padding: 10px;
+    height: auto;
+}
+.copyright {
+    
+    border: 1px solid;
+    
+    text-align: center;
+    background: #FFF4E7;
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border: none;
+    
+
+}
+}
