@@ -248,6 +248,7 @@ body {
 
 .all-sponsors {
     display: flex;
+    justify-content: space-evenly;
     gap: 100px;
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
