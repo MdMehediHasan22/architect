@@ -197,27 +197,32 @@ body {
 }
 
 .box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     border: 1px solid orange;
-    width: 170px;
+    width: 180px;
     height: 180px;
     padding: 50px;
-    column-gap: -50px;
+    padding-bottom: 60px;
+    
     border-radius: 10px;
+}
+.box-image{
+    display: block;
+    align-self: center;
+    margin: 0px auto;
 }
 
 .number {
     font-weight: 600;
     font-size: 45px;
+    text-align: center;
+    margin: 10px;
 }
 
 .definition {
     font-weight: 600;
     font-size: 20px;
     color: #727272;
+    text-align: center;
     /* -----fifth section-----727272; */
 }
 
@@ -246,6 +251,50 @@ body {
 .all-sponsors {
     display: flex;
     gap: 100px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+
+/* contact styles */
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 35px;
+    font-weight: 700px;
+}
+.contact{
+    display: flex;
+    gap: 100px;
+    background-color: #FFF8F3;
+    padding: 130px 200px;
+}
+.contact .section-title{
+    text-align: left;
+}
+.contact input[type="text"],input[type="email"], textarea{
+    margin-bottom: 24px;
+    border: 0;
+    width: 100%;
+    padding: 18px 30px;
+}
+input{
+    height: 64px;
+}
+.contact a{
+    text-decoration: none;
+}
+.btn-primary {
+    height: 64px;
+    border-radius: 5px;
+    background: #FD6E0A;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+    border: 0px;
+    padding: 18px 35px;
+    border: 0px;
+    
 }
 
 .copyright {
@@ -262,8 +311,12 @@ body {
     margin-left: 240px;
     margin-bottom: 216px;
     border: none;
+    margin-top: 50px;
 
 }
-@media (max-width:992px) {
+ @media screen and (max-width:576px) {
     
-}
+    
+      
+    
+ }
